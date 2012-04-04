@@ -1,0 +1,20 @@
+{
+  // Required
+  "name": "Play minus NEW",
+  "version": "0.1.1",
+  "manifest_version": 1,
+
+  // Recommended
+  "description": "An extension to remove the little NEW next to Google Play",
+  
+  "content_scripts": [
+    {
+      "matches": ["*://*.google.com/*"],
+      "js": [
+        "jquery.min.js",
+        "remove_new.js"
+      ],
+      "run_at": "document_end"
+    }
+  ]
+}
