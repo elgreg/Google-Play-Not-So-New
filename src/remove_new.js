@@ -11,7 +11,7 @@ if($newPlay.length === 0){
 }
 
 function getIt(){
-	var selector = "#gbzc .gbt .gbts .gbsup";
+	var selector = "#gbzc .gbt .gbts";
 	$newPlay = $(selector);
 	if($newPlay.length == 0){
 		$newPlay = $('#canvas_frame').contents().find(selector);
@@ -29,8 +29,8 @@ function killTimer(){
 
 function goJuice(){
 	$newPlay.each(function(){
-		if($(this).text() === 'NEW'){
-			$(this).remove();
+		if($(this).text() === 'Drive'){
+			$(this).text('Documents');
 		}
 	});
 }

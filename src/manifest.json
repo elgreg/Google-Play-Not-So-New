@@ -1,11 +1,11 @@
 {
   // Required
-  "name": "Google Play Not So NEW",
+  "name": "Google Documents, not Google Drive",
   "version": "0.0.1",
   "manifest_version": 1,
 
   // Recommended
-  "description": "An extension to remove the little NEW next to Google Play",
+  "description": "Change 'Drive' to 'Documents' in the menu bar. (Used to be An extension to remove the little NEW next to Google Play)",
   
   "content_scripts": [
     {
